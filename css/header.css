@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.5rem;
+    border-block-end: 1px solid var(--gray10);
+    background: #ffffff;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.header-primary {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.header-secondary {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-items{
+    height: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    height: 100%;
+    cursor: pointer;
+    margin: 0 10px;
+    display: inline-block;
+
+}
+.user-profile{
+    width: 22px;
+    border-radius: 50%;
+    background-image: url(img/profile-pic.png);
+    background-size: cover;
+}

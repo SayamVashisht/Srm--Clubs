@@ -1,0 +1,50 @@
+.miniCalendar {
+    --cellSize: 1.75rem;
+    --maxInlineSize: 12.25rem; /* cada celda mide 28px de ancho
+     y esa medida se multiplica por el numero de dias para obtener el ancho maximo,
+    el resultado se divide entre 16 parapasarlo a rems */
+}
+
+.miniCalendar-date {
+    font: var(--body1-medium);
+}
+
+.miniCalendar-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: .25rem;
+}
+
+.miniCalendar-header {
+    display: grid;
+    grid-template-columns: repeat(7, var(--cellSize));
+    grid-template-rows: var(--cellSize);
+    text-align: center;
+    font: var(--body3-regular);
+    line-height: var(--cellSize);
+    margin-block-end: .5rem;
+
+}
+
+.miniCalendar-month {
+    display: grid;
+    grid-template-columns: repeat(7, var(--cellSize));
+    grid-template-rows: repeat(6, var(--cellSize));
+    text-align: center;
+    font: var(--body3-regular);
+}
+
+.miniCalendar-monthDay {
+    line-height: var(--cellSize);
+}
+
+.miniCalendar-monthDay.is-selected {
+    background-color: var(--blue10);
+    color: var(--white);
+    border-radius: 50%;
+}
+
+.miniCalendar-monthDay.is-inactive {
+    color: var(--gray20);
+}
